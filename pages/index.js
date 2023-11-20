@@ -6,6 +6,7 @@ import Destination from "../components/Destination";
 import Deals from "../components/Deals";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import Engine from "../components/Engine";
 
 export default function Home() {
   return (
@@ -23,7 +24,14 @@ export default function Home() {
         style={{
           backgroundImage: "url(../images/admin/airline_image/841258saddf.jpg)",
         }}
-      ></section>
+      >
+        <div className="heading-container text-center">
+        <h1>Explore Beyond Boundaries</h1>
+        <h4>Your Next Adventure Awaits!</h4>
+        </div>
+        <Engine/>
+      </section>
+      
       <Why />
       <Destination />
       <Deals />

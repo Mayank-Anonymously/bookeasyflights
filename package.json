@@ -26,6 +26,7 @@
     "react-calendar": "^4.6.0",
     "react-date-range": "^1.4.0",
     "react-dom": "18.2.0",
+    "react-lottie": "^1.2.3",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.11"
