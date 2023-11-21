@@ -1,5 +1,5 @@
-import AirPortData from "@/utils/AirPortData";
-import currency from "@/utils/currency";
+import AirPortData from "../utils/AirPortData";
+import currency from "../utils/currency";
 import React, { useEffect, useState, useRef } from "react";
 
 const To = ({ setdeparture, setArCountryCode }) => {

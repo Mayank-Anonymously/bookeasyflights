@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Why from "../components/Why";
 import Destination from "../components/Destination";
@@ -25,7 +24,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <Mobile/>
+      <Mobile />
       <section
         className="banner"
         style={{
