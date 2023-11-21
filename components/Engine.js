@@ -29,6 +29,7 @@ import Col from "react-bootstrap/Col";
 import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
+import oneway_api from "../API/Flights_Results/oneway_api";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -106,26 +107,6 @@ export default function Engine(props) {
 
   const endDates34 =
     endDateFormat === "Invalid date" ? endDateFormat2 : endDateFormat;
-
-  const searchFlight = () => {
-    // if (tripType === 1) {
-    //   Oneway_api(
-    //     travelleradult,
-    //     travellerchildren,
-    //     travellerInfant,
-    //     departure,
-    //     arrival,
-    //     classe,
-    //     tripType,
-    //     startDateFormat,
-    //     endDateFormat,
-    //     setIsLoading,
-    //     isLoading,
-    //     router
-    //   );
-    //   // router.push(/)
-    // }
-  };
 
   const ChangeDateColumn = () => {
     setTripType(1);
@@ -271,7 +252,7 @@ export default function Engine(props) {
                               <Dialog
                                 as="div"
                                 className={
-                                  "fixed bg-slate-200  inset-0 z-100 overflow-y-auto rangewrapmax-parent "
+                                  " bg-slate-200  inset-0 z-100 overflow-y-auto rangewrapmax-parent"
                                 }
                                 onClose={closeModal}
                               >
@@ -306,7 +287,12 @@ export default function Engine(props) {
                                     leaveTo="opacity-0 scale-95"
                                   >
                                     <div className="modal-overlay">
-                                      <div className="date-modal inline-block w-full datepic-rangewrapmax-wxl my-3 overflow-hidden text-left align-middle transition-all transform bg-white  rounded-2xl">
+                                      <div
+                                        style={{
+                                          top: "30px",
+                                        }}
+                                        className="date-modal inline-block w-full datepic-rangewrapmax-wxl  overflow-hidden text-left align-middle transition-all transform bg-white  rounded-2xl"
+                                      >
                                         <Dialog.Title
                                           as="h3"
                                           className=" text-sm  font-medium leading-6 text-gray-900 justify-content-between d-flex flex-column justify-content-center align-items-center flex-wrap"
@@ -397,7 +383,7 @@ export default function Engine(props) {
                                     onClick={ShowDateChange}
                                   >
                                     <span className="input-group-text d-flex align-items-center justify-content-start">
-                                     Add return date 
+                                      Add return date
                                     </span>
                                   </div>
                                 </div>
@@ -407,10 +393,23 @@ export default function Engine(props) {
                           {/* ----------------Return--------------  */}
                           {/* ----------------Return--------------  */}
                           <Col xs={6} lg={4} md={4} className="datedep">
-                            {/* </div> */}
-                            {/* <label>Search flights</label> */}
                             <Button
-                              onClick={() => searchFlight()}
+                              onClick={() => {
+                                oneway_api(
+                                  travelleradult,
+                                  travellerchildren,
+                                  travellerInfant,
+                                  departure,
+                                  arrival,
+                                  classe,
+                                  tripType,
+                                  startDateFormat,
+                                  endDateFormat,
+                                  setIsLoading,
+                                  isLoading,
+                                  router
+                                );
+                              }}
                               className="search-flight-btn"
                               disabled={isLoading}
                             >

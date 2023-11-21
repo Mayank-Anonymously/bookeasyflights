@@ -176,13 +176,13 @@ const From = ({ setarrival, setCountryCode }) => {
           {filterdData.map((item, i) => (
             <>
               <div
-                className="dataItem w-full px-2 py-1 text-left reset-pointer"
+                className="dataItem d-flex w-full px-2 py-1 text-left reset-pointer"
                 onClick={() => airportData(item)}
               >
                 <div className="flex-grow-1 pr-2 text-left">
                   {item.airportName + "," + item.cityName}
                 </div>
-                <span className="float-right shadow foot px-4 rounded-xl text-white">
+                <span className="float-right shadow foot px-4 rounded-xl bg-danger text-white">
                   {item.airportCode}
                 </span>
               </div>
