@@ -12,7 +12,8 @@ const oneway_api = (
   endDateFormat,
   setIsLoading,
   isLoading,
-  router
+  router,
+  setErrorState
 ) => {
   const options = {
     method: "POST",
@@ -34,13 +35,14 @@ const oneway_api = (
   axios
     .request(options)
     .then(function (response) {
-      console.log(response.data);
       if (response.data.message === "Result Fetched") {
         setIsLoading(false);
-
         router.push(
           `https://www.aviasales.com${response.data.response.data[0].link}`
         );
+        if (response.data.length === 0) {
+          setErrorState("No Routes Availbale");
+        }
       }
     })
     .catch(function (error) {

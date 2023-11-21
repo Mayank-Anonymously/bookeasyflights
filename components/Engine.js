@@ -30,6 +30,7 @@ import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
 import oneway_api from "../API/Flights_Results/oneway_api";
+import axios from "axios";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -67,9 +68,10 @@ export default function Engine(props) {
   const [oneWay, setOneway] = useState(1);
   const [twoWay, setTwoway] = useState(2);
   const [valueChange, setValueChange] = useState(false);
-  const [valueDate, onChange] = useState(new Date());
+  const [errorState, setErrorState] = useState("");
   const [valueDateReturn, onChangeReturn] = useState(new Date());
   const [isLoading, setIsLoading] = useState(false);
+
   const year = moment().add(5, "months").format("MM/DD/YYYY");
 
   // Ios
@@ -90,17 +92,17 @@ export default function Engine(props) {
   }
 
   const startDateFormat = moment(state[0].startDate, "DD/MM/YYYY").format(
-    "MM/DD/YYYY"
+    "YYYY-MM-DD"
   );
 
-  const startDateFormat2 = moment(state[0].startDate).format("MM/DD/YYYY");
+  const startDateFormat2 = moment(state[0].startDate).format("YYYY-MM-DD");
 
   // Window
   const endDateFormat = moment(state[0].endDate, "DD/MM/YYYY").format(
-    "MM/DD/YYYY"
+    "YYYY-MM-DD"
   );
 
-  const endDateFormat2 = moment(state[0].endDate).format("MM/DD/YYYY");
+  const endDateFormat2 = moment(state[0].endDate).format("YYYY-MM-DD");
 
   const startDates12 =
     startDateFormat === "Invalid date" ? startDateFormat2 : startDateFormat;
@@ -124,6 +126,23 @@ export default function Engine(props) {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
+  };
+
+  const searchFlight = () => {
+    oneway_api(
+      travelleradult,
+      travellerchildren,
+      travellerInfant,
+      departure,
+      arrival,
+      classe,
+      tripType,
+      startDateFormat,
+      endDateFormat,
+      setIsLoading,
+      isLoading,
+      router
+    );
   };
   return (
     <>
@@ -394,22 +413,7 @@ export default function Engine(props) {
                           {/* ----------------Return--------------  */}
                           <Col xs={6} lg={4} md={4} className="datedep">
                             <Button
-                              onClick={() => {
-                                oneway_api(
-                                  travelleradult,
-                                  travellerchildren,
-                                  travellerInfant,
-                                  departure,
-                                  arrival,
-                                  classe,
-                                  tripType,
-                                  startDateFormat,
-                                  endDateFormat,
-                                  setIsLoading,
-                                  isLoading,
-                                  router
-                                );
-                              }}
+                              onClick={() => searchFlight()}
                               className="search-flight-btn"
                               disabled={isLoading}
                             >
@@ -451,11 +455,17 @@ export default function Engine(props) {
                 </div>
               </Tab.Panel>
             </div>
-            {isLoading === true && (
-              <div className="text-center text-grey my-3">
+            {isLoading === true ? (
+              <div className="text-center text-white my-3">
                 Finding Best Fare for you
                 <Lottie options={defaultOptions} height={110} width={110} />
               </div>
+            ) : (
+              <>
+                {errorState ? (
+                  <div className="text-center text-grey my-3">{errorState}</div>
+                ) : null}
+              </>
             )}
           </div>
         </Tab.Group>

@@ -17,6 +17,20 @@ export default function Document() {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11329867522"
+        ></script>
+        <script>
+          {`  window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+          gtag('config', 'AW-11329867522');`}
+        </script>
+        <script>
+          {` gtag('event', 'conversion', {'send_to': 'AW-11329867522/JRH2CO2Jl-AYEIKewJoq'})`}
+        </script>
       </Head>
       <body>
         <Main />
