@@ -1640,6 +1640,9 @@ img.img_set {
     left: 0!important;
     bottom: 21px!important;
   }
+  .mobile-container{
+    display: block;
+  }
   .heading-container{
     display: none;
   }
@@ -7527,4 +7530,9 @@ body .book-flight-engine.modify-ver .book-flight-engine .search-engine-in {
 .oneway-tab{
   display: flex;
   gap: 10px; 
+}
+
+
+.mobile-container{
+  display: none;
 }

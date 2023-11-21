@@ -7,6 +7,7 @@ import Deals from "../components/Deals";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Engine from "../components/Engine";
+import Mobile from "../components/Mobile";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Mobile/>
       <section
         className="banner"
         style={{
