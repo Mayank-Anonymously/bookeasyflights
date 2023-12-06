@@ -7677,7 +7677,7 @@ body .book-flight-engine.modify-ver .book-flight-engine .search-engine-in {
   font-weight: 600;
   cursor: pointer;
 }
-.airlines-list{
+/* .airlines-list{
   list-style-type: none;
   color: #848b8d;
     text-transform: capitalize;
@@ -7685,7 +7685,16 @@ body .book-flight-engine.modify-ver .book-flight-engine .search-engine-in {
 .airlines-list:hover{
   cursor: pointer;
   color: #000;
-}
+} */
 .airlines-list-order{
   padding-left: 0!important;
+}
+.airlines-list-order li {
+  list-style-type: none;
+  color: #848b8d;
+    text-transform: capitalize;
+}
+.airlines-list-order li:hover{
+  cursor: pointer;
+  color: #000;
 }
