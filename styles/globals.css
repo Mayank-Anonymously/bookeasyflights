@@ -214,7 +214,6 @@ img.logo {
   padding: 50px 0;
 }
 
-.hding_page {}
 
 .hding_page h2,
 .hding_page h3 {
@@ -813,7 +812,9 @@ img.logo {
 }
 
 .dis_bx {
-  background: #fff;
+  background-color: #eeeeee;
+  padding: 22px 0px;
+  margin-bottom: 30px;
   margin: 15px 0;
 }
 
@@ -7675,4 +7676,16 @@ body .book-flight-engine.modify-ver .book-flight-engine .search-engine-in {
 .hover-span p:hover{
   font-weight: 600;
   cursor: pointer;
+}
+.airlines-list{
+  list-style-type: none;
+  color: #848b8d;
+    text-transform: capitalize;
+}
+.airlines-list:hover{
+  cursor: pointer;
+  color: #000;
+}
+.airlines-list-order{
+  padding-left: 0!important;
 }

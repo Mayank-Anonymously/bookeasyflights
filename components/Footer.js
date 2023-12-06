@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Airlines from "./Airlines";
 
 const Footer = () => {
   return (
@@ -123,6 +124,8 @@ const Footer = () => {
             </div>
           </div>
         </footer>
+<Airlines/>
+
         <div className="dis_bx">
           <div className="container">
             <div className="row">
