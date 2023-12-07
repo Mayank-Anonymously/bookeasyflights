@@ -1,4 +1,6 @@
+import About from "@/components/About";
 import Engine from "@/components/Engine";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { host, siteId } from "@/static";
 import Head from "next/head";
@@ -9,7 +11,6 @@ const index = ({ url }) => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const fetchData = async () => {
-    console.log(`${host}dynamic/get-pages-by-siteid-url/${siteId}/${url}`);
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -57,6 +58,8 @@ const index = ({ url }) => {
         className="container page-content"
         dangerouslySetInnerHTML={{ __html: data.content }}
       />
+      <About />
+      <Footer />
     </>
   );
 };

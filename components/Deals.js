@@ -35,7 +35,7 @@ const Deals = () => {
                   <p>$217.78</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/SLC2008LAS24091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -58,7 +58,7 @@ const Deals = () => {
                   <p>$696.03</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/ATL1708HNL26091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -81,7 +81,7 @@ const Deals = () => {
                   <p>$379.78</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/IAH1408EWR28091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -104,7 +104,7 @@ const Deals = () => {
                   <p>$1050.75</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/ORD0508MSP28081">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -137,7 +137,7 @@ const Deals = () => {
                   <p>$890.35</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/CHI0509RM28091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -157,7 +157,7 @@ const Deals = () => {
                   <p>$734.96</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/JFK2808HNL28091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -177,7 +177,7 @@ const Deals = () => {
                   <p>$153.56</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/JFK1508DFW28091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
@@ -197,7 +197,7 @@ const Deals = () => {
                   <p>$307.81</p>
                 </div>
                 <div className="deal_Btn">
-                  <a href="https://search.bookeasyflights.com/flights/MSP1808LAS28091">
+                  <a href="#">
                     <i className="fa fa-angle-right" />
                   </a>
                 </div>
