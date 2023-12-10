@@ -199,3 +199,10 @@
 // };
 
 // export default MapComponent;
+import React from "react";
+
+const MPS = () => {
+  return <div>MPS</div>;
+};
+
+export default MPS;
