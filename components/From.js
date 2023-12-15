@@ -145,7 +145,7 @@ const From = ({ setarrival, setCountryCode }) => {
 
             <input
               type="text"
-              id="selecteds"
+              id="from-selected"
               className="form-control"
               value={select ? select.airportName : ""}
               autocomplete="off"

@@ -141,7 +141,7 @@ const To = ({ setdeparture, setArCountryCode }) => {
             </span>
             <input
               type="text"
-              id="selecteds"
+              id="to-selecteds"
               className="form-control"
               value={select ? select.airportName : ""}
               autocomplete="off"
