@@ -16,7 +16,7 @@ const Mobile = () => {
             background: "#fff",
             padding: 10
           }}
-          src="images/modal.png"
+          src="../images/modal.png"
         />
       </a>
     </div>

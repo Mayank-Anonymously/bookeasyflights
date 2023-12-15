@@ -108,6 +108,7 @@ img.logo {
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-y: hidden;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -1765,6 +1766,7 @@ img.img_set {
   .banner {
     padding-top: 0;
     height: 80vh;
+    overflow-y: hidden;
   }
 
   .search-container {
@@ -7583,7 +7585,7 @@ body .book-flight-engine.modify-ver .book-flight-engine .search-engine-in {
   z-index: 99;
   position: absolute;
   bottom: 0;
-  left: 8%;
+  left: 3%;
   padding: 24px;
   border-radius: 14px;
 }

@@ -2,11 +2,13 @@ import React from "react";
 import Footer from "../components/Footer";
 
 import Navbar from "../components/Navbar";
+import Mobile from "../components/Mobile";
 
 const refund = () => {
   return (
     <>
       <Navbar />
+      <Mobile />
       <>
         <section
           className="banner_page"

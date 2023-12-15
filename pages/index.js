@@ -7,6 +7,7 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Engine from "../components/Engine";
 import Mobile from "../components/Mobile";
+import MobileNav from "../components/MobileNav";
 
 export default function Home() {
   return (
@@ -22,8 +23,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
       <Navbar />
+      {/* <MobileNav/> */}
       <Mobile />
       <section
         className="banner"

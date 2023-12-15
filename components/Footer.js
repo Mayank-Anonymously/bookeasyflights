@@ -162,7 +162,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-2">
                 <div className="img_travel">
-                  <img src="images/arc.png" />
+                  <img src="../images/arc.png" />
                 </div>
               </div>
               <div className="col-md-10">

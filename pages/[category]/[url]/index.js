@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Engine from "@/components/Engine";
 import Footer from "@/components/Footer";
+import Mobile from "@/components/Mobile";
 import Navbar from "@/components/Navbar";
 import { host, siteId } from "@/static";
 import Head from "next/head";
@@ -41,7 +42,7 @@ const index = ({ url }) => {
       </Head>
 
       <Navbar />
-
+      <Mobile />
       <section
         className="banner"
         style={{
