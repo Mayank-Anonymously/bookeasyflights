@@ -116,7 +116,12 @@ const Deals = () => {
                   <img src="images/deal.jpg" className="rounded img-fluid" />
                   <div className="bnr_phone">
                     <h4>CALL NOW FOR EXCLUSIVE FARES</h4>
-                    <a href="tel:+1-855-470-0326">+1-855-470-0326</a>
+                    <a
+                      href="tel:+1-8888-750-118
+"
+                    >
+                      +1-8888-750-118
+                    </a>
                   </div>
                 </div>
               </div>

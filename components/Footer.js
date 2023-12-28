@@ -124,7 +124,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-<Airlines/>
+        <Airlines />
 
         <div className="dis_bx">
           <div className="container">
